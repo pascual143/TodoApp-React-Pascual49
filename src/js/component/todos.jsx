@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 const Todos = () => {
 
@@ -6,8 +6,8 @@ const Todos = () => {
     const [tasks, setTasks]=useState([])
 
     const addTask = (event) => {
-        if (event.key === "Enter") {
-          setTasks(tasks.concat(input1))
+        if (event.key === "Enter" && input1.trim() !== '') {  // write the event only if I press enter and the input is not empty
+          setTasks(tasks.concat(input1)) 
           setInput1("")
           // console.log("estoy adentro del addTask y dentro del if") 
         }
