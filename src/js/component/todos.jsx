@@ -21,7 +21,7 @@ const Todos = () => {
     return (
         <div>
             
-            <h1 className="p-2 m-2 mx-auto"> TODOS </h1>
+            <h1 className="p-3 m-2 mx-auto text-center"> TODOS </h1>
 
             <div className="list-group mx-auto" style={{width:"400px"}}>
 
